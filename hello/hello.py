@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import typing
 
-import pytest
 from biscuit.extensions import Extension
 
 if typing.TYPE_CHECKING:
