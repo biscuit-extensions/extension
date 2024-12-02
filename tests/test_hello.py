@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import typing
+import sys
+
+sys.path.append("..")
 
 from hello import setup
 
