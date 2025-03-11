@@ -1,12 +1,3 @@
-# biscuit
-data/
-extensions/*
-
-# nuitka
-biscuit.build
-biscuit.dist
-
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

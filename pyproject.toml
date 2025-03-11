@@ -7,10 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-biscuit-editor = "^2.99.99"
+biscuit-editor = "^3.0.1"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
+pytest = "^8.3.5"
 
 [build-system]
 requires = ["poetry-core"]
