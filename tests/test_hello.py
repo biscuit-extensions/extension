@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import sys
 import typing
 
-from hello import setup
+sys.path.append("..")
+
+from src.hello import setup
 
 if typing.TYPE_CHECKING:
     from biscuit import App
