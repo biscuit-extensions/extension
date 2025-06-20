@@ -1,0 +1,6 @@
+{
+  "extension_name": "my_extension",
+  "description": "A Biscuit extension.",
+  "author": "Your Name <email@example.com>",
+  "version": "0.1.0"
+}
