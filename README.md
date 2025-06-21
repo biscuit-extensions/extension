@@ -1,12 +1,12 @@
-## Hello Biscuit Extension Template: {{ cookiecutter.extension_name | title }}
+## Hello Biscuit Extension Template
 
 This template is used to initialize a new Biscuit extension. It includes the basic structure (package, tests) for a simple extension that greets the user.
 
 Check the [API reference](https://tomlin7.github.io/biscuit/api/app) for adding more functionality to your extension.
 
-## Extension Development
+## Getting Started
 
-To create a new Biscuit extension, you can use the Biscuit CLI. Make sure you have the Biscuit CLI installed. If you don't have it installed, you can install it using:
+To create a new Biscuit extension using this template, you can use the [Biscuit CLI](https://pypi.org/project/biscuit-editor)(Make sure you have it installed).
 
 ```cs
 biscuit ext new <extension name>
@@ -14,33 +14,21 @@ biscuit ext new <extension name>
 
 > [!NOTE] Make sure you have `cookiecutter` installed (`pip install cookiecutter`).
 
-### Testing
+## Project Structure
 
-Make sure to install the extension before running the tests.
+Keep the structure of the project as follows to ensure compatibility with Biscuit's extension system:
 
+```bash
+your-extension/
+├── src/
+│   └── your_extension/
+│       ├── __init__.py          # Extension entry point
+│       └── extension.py         # Main extension logic
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py             # Pytest configuration
+│   └── test_your_extension.py  # Test cases
+├── pyproject.toml              # Project configuration
+├── README.md                   # Documentation
+└── .gitignore                  # Git ignore rules
 ```
-poetry install --with dev
-poetry run pytest
-```
-
-Modify tests to reflect the changes you made to the extension.
-
-<!--
-
-### Publishing
-
-To publish the extension, run the following command:
-
-```cs
-biscuit ext publish
-```
-
-### Installing
-
-To install the extension, run the following command:
-
-```cs
-biscuit ext install <extension name>
-```
-
--->
