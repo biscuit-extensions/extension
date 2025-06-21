@@ -15,16 +15,34 @@
 - **`src/{{ cookiecutter.extension_name }}/extension.py`**: Contains the main `greet()` function and extension logic
 - **`tests/test_{{ cookiecutter.extension_name }}.py`**: Add tests for your new functionality
 
+## Running the Development Server
+
+To run the development server, use the following command:
+
+```bash
+biscuit ext dev
+```
+
+This will start the server and allow you to test your extension in a local environment.
+
 ### Testing
 
-Make sure to install the extension before running the tests.
+Make sure to install `pytest` before running the tests.
 
-```
-poetry install --with dev
-poetry run pytest
+```bash
+biscuit ext test
 ```
 
 Modify tests to reflect the changes you made to the extension.
+
+## Publishing & Updating
+
+To publish or update your extension, use the following commands, and follow the instructions provided by the Biscuit CLI:
+
+```bash
+biscuit ext publish
+biscuit ext update
+```
 
 ### Project Structure
 
@@ -41,26 +59,6 @@ Modify tests to reflect the changes you made to the extension.
 ├── pyproject.toml              # Project configuration
 └── README.md                   # This file
 ```
-
-<!--
-
-### Publishing
-
-To publish the extension, run the following command:
-
-```cs
-biscuit ext publish
-```
-
-### Installing
-
-To install the extension, run the following command:
-
-```cs
-biscuit ext install <extension name>
-```
-
--->
 
 ---
 
