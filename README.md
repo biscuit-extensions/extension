@@ -12,7 +12,8 @@ To create a new Biscuit extension using this template, you can use the [Biscuit 
 biscuit ext new <extension name>
 ```
 
-> [!NOTE] Make sure you have `cookiecutter` installed (`pip install cookiecutter`).
+> [!NOTE] 
+> Make sure you have `cookiecutter` installed (`pip install cookiecutter`).
 
 ## Project Structure
 
